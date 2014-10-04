@@ -1,4 +1,4 @@
-# grunt-express-spawn [![NPM version](https://badge.fury.io/js/grunt-express-spawn.png)](http://badge.fury.io/js/grunt-express-spawn)  [![Build Status](true.png)](true)
+# grunt-express-spawn [![NPM version](https://badge.fury.io/js/grunt-express-spawn.png)](http://badge.fury.io/js/grunt-express-spawn)
 
 > Manage Express applications
 
@@ -32,9 +32,9 @@ grunt.initConfig({
     },
     your_target: {
       // Target-specific file lists and/or options go here.
-    },
-  },
-})
+    }
+  }
+});
 ```
 
 ### Options
@@ -63,7 +63,7 @@ grunt.initConfig({
       env: {
         NODE_ENV: 'development'
       }
-    },
+    }
   }
 })
 ```
