@@ -54,9 +54,7 @@ module.exports = function (grunt) {
     if (options.stderr) {
       instance.stderr.setEncoding('utf8');
       instance.stderr.on('data', function (data) {
-        if (/^Error:/.test(data)) {
-            grunt.fatal(instance.name + '\u000A' + data);
-        }
+        grunt.log.write(instance.name + chalk.red(data));
       });
     }
 
@@ -73,8 +71,9 @@ module.exports = function (grunt) {
       } else {
         grunt.log.warn(instance.name.trim() + ' Server closed unexpectedly (exit code ' + code + ').');
       }
-
-      terminate(done);
+// FIX: if terminate then newly created process is allso killed. Remove it to allow
+// grunt-contrib-watch to work
+//      terminate(done);
     });
 
     grunt.log.ok(instance.name.trim() + ' Server started.');

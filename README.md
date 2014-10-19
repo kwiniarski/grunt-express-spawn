@@ -76,7 +76,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
- * 2014   v0.1.0   First commit
+ * 2014     v0.1.1    FIX: Don't terminate process on close
+ * 2014   v0.1.0    First commit
 
 
 ## License

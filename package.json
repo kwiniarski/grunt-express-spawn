@@ -1,7 +1,7 @@
 {
   "name": "grunt-express-spawn",
   "description": "Manage Express applications",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/kwiniarski/grunt-express-spawn",
   "author": {
     "name": "Krzysztof Winiarski",
